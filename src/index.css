@@ -8,4 +8,8 @@
 		@apply min-h-screen flex flex-col bg-gray-100 text-[#404145];
 		font-family: "Roboto", sans-serif;
 	}
+
+	#root {
+		margin-top: 4rem;
+	}
 }

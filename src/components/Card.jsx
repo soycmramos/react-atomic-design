@@ -2,7 +2,7 @@ import Img from './Img'
 
 export default function Card({ img, title, desciption, className, ...res }) {
 	return (
-		<article className='bg-white shadow-xl rounded-md' {...res}>
+		<article className='bg-white shadow rounded-md' {...res}>
 			<div className="overflow-hidden">
 				<Img src={img} className='rounded-t-md hover:scale-105 transition-all' />
 			</div>

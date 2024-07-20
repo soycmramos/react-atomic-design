@@ -4,7 +4,7 @@ import Nav from './Nav'
 
 export default function Header() {
 	return (
-		<header className='bg-white fixed top-0 left-0 z-10 shadow w-full h-16'>
+		<header className='bg-white fixed top-0 left-0 z-10 w-full h-16'>
 			<Container className={`flex justify-between items-center h-full`}>
 				<Logo />
 				<Nav />

@@ -1,8 +1,7 @@
-export default function Input({ type, className, ...res }) {
+export default function Input({ type, ...res }) {
 	return (
 		<input
 			type={type}
-			className={className}
 			{...res}
 		/>
 	)

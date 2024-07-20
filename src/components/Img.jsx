@@ -1,9 +1,8 @@
-export default function Img({ src, alt, className, ...res }) {
+export default function Img({ src, alt, ...res }) {
 	return (
 		<img
 			src={src}
 			alt={alt}
-			className={className}
 			{...res}
 		/>
 	)

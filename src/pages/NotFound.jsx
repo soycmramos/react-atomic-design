@@ -1,9 +1,11 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Container from '../components/Container'
 import Img from './../components/Img'
 import img from '../assets/not-found.png'
 
 export default function NotFound() {
+	useEffect(() => { document.title = 'Error 404' }, [])
 	return (
 		<section className='py-10'>
 			<Container className='flex flex-col place-items-center gap-4'>

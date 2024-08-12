@@ -5,15 +5,22 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	background-color: #f3f3f3;
-	font-family: "Poppins", sans-serif;
-	color: #404145;
+:root {
+	--header-height: theme('spacing.header-height');
+	--bg-body: theme('colors.bg-body');
+	--text-color: theme('colors.text-color')
+}
+
+@layer base {
+	body {
+		background-color: var(--bg-body);
+		color: var(--text-color);
+	}
 }
 
 #root {
-	min-height: calc(100vh - 4rem);
-	margin-top: 4rem;
+	min-height: calc(100dvh - var(--header-height));
+	margin-top: var(--header-height);
 	display: flex;
 	flex-direction: column;
 }
